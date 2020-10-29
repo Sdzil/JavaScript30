@@ -69,10 +69,20 @@
     window.addEventListener("keydown", function (event) {
       // let a = event.keyCode;
   
-        let b = $("audio[data-key="+event.keyCode+"]").get();
-       
+        let b = $("audio[data-key="+event.keyCode+"]");
+        console.log(b);
         b[0].play();
+        let a = $("div[data-key="+event.keyCode+"]");
+        a.addClass("playing");
+        a.addClass("sound");
   
+    })
+
+    window.addEventListener("keyup", function (event) {
+    
+        let a = $("div[data-key="+event.keyCode+"]");
+        a.removeClass("playing");
+        a.removeClass("sound");
     })
 
 
