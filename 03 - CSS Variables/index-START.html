@@ -44,12 +44,6 @@
       width: 100px;
     }
 
-    /* img{
-
-      filter: blur(10px);
-
-    } */
-
 
   </style>
 
@@ -59,34 +53,34 @@
   <script>
 
 
-    $('#spacing').change(function () {
-      // console.log($('#spacing').val());
+    $('input').change(function () {
       pad = $('#spacing').val();
       color = $('#base').val();
       blurimg = $('#blur').val();
-      // console.log(blurimg);
       $("img").css({"padding": pad, "background-color": color, "filter": "blur("+blurimg+"px)"});
     });
 
-    $('#base').change(function () {
-      // console.log($('#spacing').val());
-      pad = $('#spacing').val();
-      color = $('#base').val();
-      blurimg = $('#blur').val();
-      // console.log(blurimg);
-      // $("img").css("background-color", color);
-      $("img").css({"padding": pad, "background-color": color, "filter": "blur("+blurimg+"px)"});
-    });
+    // $('#spacing').change(function () {
+    //   pad = $('#spacing').val();
+    //   color = $('#base').val();
+    //   blurimg = $('#blur').val();
+    //   $("img").css({"padding": pad, "background-color": color, "filter": "blur("+blurimg+"px)"});
+    // });
 
-    $('#blur').change(function () {
-      pad = $('#spacing').val();
-      color = $('#base').val();
-      blurimg = $('#blur').val();
-      // blurimg = $('#blur').val();
-      // console.log(blurimg);
-      // $("img").css("filter", "blur("+blurimg+"px)");
-      $("img").css({"padding": pad, "background-color": color, "filter": "blur("+blurimg+"px)"});
-    });
+    // $('#base').change(function () {
+    //   pad = $('#spacing').val();
+    //   color = $('#base').val();
+    //   blurimg = $('#blur').val();
+
+    //   $("img").css({"padding": pad, "background-color": color, "filter": "blur("+blurimg+"px)"});
+    // });
+
+    // $('#blur').change(function () {
+    //   pad = $('#spacing').val();
+    //   color = $('#base').val();
+    //   blurimg = $('#blur').val();
+    //   $("img").css({"padding": pad, "background-color": color, "filter": "blur("+blurimg+"px)"});
+    // });
 
 
 
